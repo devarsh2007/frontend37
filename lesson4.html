@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+      <style>
+            *{
+                  font-family: "Noto Sans", sans-serif;
+            }
+      </style>
+</head>
+<body>
+      <h1>
+            addition of 2 numbers
+      </h1>
+
+      <ol>
+            <li>addition</li>
+            <li>subtraction</li>
+            <li>multiplication</li>
+            <li>division</li>
+      </ol>
+
+      <script>
+
+            var number1 = parseInt(prompt("enter number1 : "));
+            var number2 = parseInt(prompt("enter number2 : "));
+
+            var choise = parseInt(prompt("enter your choise : "));
+
+            // var number2 = parseFloat(prompt("enter number2 : "));
+            
+            //console.log("addition : ",answer);
+            //we have to write horizontaly when we use double quates
+            //document.write("<h1>hello world</h1><h2>this is first line</h2>"); 
+            
+            
+            if(choise === 1)
+            {
+                        console.log("addition called...");
+                        var answer = number1+number2;
+                        document.write(`
+                  <table border="1" cellpadding="10" align="center">
+                  <tr>
+                        <td>number 1</td>
+                        <td>${number1}</td>
+                  </tr>
+                  <tr>
+                        <td>number 2</td>
+                        <td>${number2}</td>
+                  </tr>
+                  <tr bgcolor="yellow">
+                        <td>addition</td>
+                        <td>${answer}</td>
+                  </tr>
+                  </table>
+            `);
+            }
+
+            else if(choise === 2)
+            {
+                  
+                  console.log("subtraction called...");
+                  var answer = number1-number2;
+                  document.write(`
+            <table border="1" cellpadding="10" align="center">
+            <tr>
+                  <td>number 1</td>
+                  <td>${number1}</td>
+            </tr>
+            <tr>
+                  <td>number 2</td>
+                  <td>${number2}</td>
+            </tr>
+            <tr bgcolor="yellow">
+                  <td>subtraction</td>
+                  <td>${answer}</td>
+            </tr>
+            </table>
+      `);
+
+            }
+
+            else if(choise === 3)
+            {
+                     
+                  console.log("multiplication called...");
+                  var answer = number1*number2;
+                  document.write(`
+            <table border="1" cellpadding="10" align="center">
+            <tr>
+                  <td>number 1</td>
+                  <td>${number1}</td>
+            </tr>
+            <tr>
+                  <td>number 2</td>
+                  <td>${number2}</td>
+            </tr>
+            <tr bgcolor="yellow">
+                  <td>multiplication</td>
+                  <td>${answer}</td>
+            </tr>
+            </table>
+      `);
+
+            }
+
+            else if(choise === 4)
+            {
+                     
+                  console.log("division called...");
+                  var answer = number1/number2;
+                  document.write(`
+            <table border="1" cellpadding="10" align="center">
+            <tr>
+                  <td>number 1</td>
+                  <td>${number1}</td>
+            </tr>
+            <tr>
+                  <td>number 2</td>
+                  <td>${number2}</td>
+            </tr>
+            <tr bgcolor="yellow">
+                  <td>division</td>
+                  <td>${answer}</td>
+            </tr>
+            </table>
+      `);
+
+            }
+
+            else{
+                  document.write(`
+                  <h3>invalid input</h3>
+                  `);
+            }
+            
+
+      </script>
+</body>
+</html>
