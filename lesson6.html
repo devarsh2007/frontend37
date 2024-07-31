@@ -13,6 +13,8 @@
       </head>
       <body>
 
+            
+
             <script
                   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -22,6 +24,12 @@
             var p =parseFloat( prompt("enter amount : "));
             var r =parseFloat( prompt("enter rate : "));
             var t =parseFloat( prompt("enter time in years : "));
+
+
+            var si = (p*r*t)/100;
+            console.log(si);
+
+            var total = si+p;
 
             document.write(`
             <div class="container">
@@ -45,13 +53,26 @@
                   <td>Time</td>
                   <td>${t}</td>
             </tr>
+            <tr >
+                  <td>simple interest</td>
+                  <td>₹${si}</td>
+            </tr>
+
+            <tr class="text-bg-primary">
+                  <td>Total Amount</td>
+                  <td>₹${total}</td>
+            </tr>
+
+            
       </table>
+      
                               </div>
                         </div>
                   </div>
             </div>
       </div>
             `);
+
 
       </script>
       </body>

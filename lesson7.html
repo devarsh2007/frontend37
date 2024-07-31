@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+      </head>
+      <body>
+
+            <script>
+            var latter = prompt("enter a latter : ");
+
+            latter = latter.toLowerCase();
+            console.log(latter);
+
+            if(latter==="a" || latter==="o" || latter==="u" || latter==="i" || latter==="e")
+            {
+                  document.write(`<h1>this is vowel</h1>`);
+            }
+            else if (latter === "b" || latter === "c" || latter === "d" || latter === "f" || latter === "g" ||
+    latter === "h" || latter === "j" || latter === "k" || latter === "l" || latter === "m" ||
+    latter === "n" || latter === "p" || latter === "q" || latter === "r" || latter === "s" ||
+    latter === "t" || latter === "v" || latter === "w" || latter === "x" || latter === "y" ||
+    latter === "z") {
+    document.write(`<h1>this is consonant</h1>`);
+}
+      else if(latter==="")
+      {
+            document.write(`<h1>latter not given...</h1>`);
+      }
+            
+            else{
+                  document.write(`<h1>invalid input</h1>`);
+            }
+
+          console.log(typeof(latter)) ;
+      </script>
+      </body>
+</html>
