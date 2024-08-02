@@ -22,13 +22,12 @@
             var email = prompt("enter email : ");
             var password = parseInt(prompt("enter password : "));
             var login = "";
-            var color = "";
 
             //abc@gamil.com
             //123123
 
-            email==="abc@gamil.com" && password===123123 ?  login="Login Successfull":login="Login Failed";
-            email==="abc@gamil.com" && password===123123 ?  color="text-bg-success":color="text-bg-danger";
+            email==="abc@gmail.com" && password===123123 ?  login="Login Successfull":login="Login Failed";
+           
 
             console.log(login);
 
@@ -37,7 +36,7 @@
             <div class="row">
                   <div class="col-6 offset-3 mt-5">
                         <div class="card text-center shadow">
-                              <div class="card-header h1 ${color}">
+                              <div class="card-header h1 ${ email==="abc@gmail.com" && password===123123 ?  "text-bg-success":"text-bg-danger"}">
                                     ${login}
                               </div>
                               <div class="card-body">
