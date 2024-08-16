@@ -1,85 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+    </head>
 
-<body>
+    <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="card shadow">
-                    <div class="card-header text-bg-danger text-center">
-                        <h3>generate cards</h3>
-                    </div>
-                    <div class="card-body ">
-                       <form action="" onsubmit="return generateCard();">
-                        <div class="row">
-                            <div class="col">
-                                <div class=" form-floating">
-                                    <input type="number" name="number" id="number" class=" form-control"
-                                        placeholder="card number">
-                                    <label for="number" class=" form-lable">card
-                                        number</label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class=" form-floating">
-                                    <input type="text" name="head" id="head" class=" form-control"
-                                        placeholder="heading">
-                                    <label for="head" class=" form-lable">heading</label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class=" form-floating">
-                                    <input type="text" name="body" id="body" class=" form-control"
-                                        placeholder="content">
-                                    <label for="body" class=" form-lable">content</label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <!-- <label for="color" class=" form-label">Select colour</label> -->
-                                <select name="color" id="color" class=" form-select" style="height: 100%;">
-                                    <option value="">select colour</option>
-                                    <option value="">danger</option>
-                                    <option value="">success</option>
-                                    <option value="">warning</option>
-                                    <option value="">primary</option>
-                                    <option value="">dark</option>
-                                </select>
-                            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card shadow">
+                        <div class="card-header text-bg-danger text-center">
+                            <h3>generate cards</h3>
+                        </div>
+                        <div class="card-body ">
+                            <form action onsubmit="return generateCard();">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class=" form-floating">
+                                            <input type="number" name="number"
+                                                id="number"
+                                                class=" form-control"
+                                                placeholder="card number">
+                                            <label for="number"
+                                                class=" form-lable">card
+                                                number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class=" form-floating">
+                                            <input type="text" name="head"
+                                                id="head" class=" form-control"
+                                                placeholder="heading">
+                                            <label for="head"
+                                                class=" form-lable">heading</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class=" form-floating">
+                                            <input type="text" name="body"
+                                                id="body" class=" form-control"
+                                                placeholder="content">
+                                            <label for="body"
+                                                class=" form-lable">content</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- <label for="color" class=" form-label">Select colour</label> -->
+                                        <select name="color" id="color"
+                                            class=" form-select"
+                                            style="height: 100%;">
+                                            <option value>select colour</option>
+                                            <option
+                                                value="text-bg-danger">danger</option>
+                                            <option
+                                                value="text-bg-success">success</option>
+                                            <option
+                                                value="text-bg-warning">warning</option>
+                                            <option
+                                                value="text-bg-primary">primary</option>
+                                            <option
+                                                value="text-bg-dark">dark</option>
+                                        </select>
+                                    </div>
 
-                            <div class="col text-center">
-                                <button type="submit" class=" btn btn-danger">generate</button>
-                                <button type="reset" class=" btn btn-dark">clear all</button>
-                            </div>
-                       </div>
-                       </form>
+                                    <div class="col text-center">
+                                        <button type="submit"
+                                            class=" btn btn-danger w-100">generate</button>
+                                        <button type="reset"
+                                            class=" btn btn-dark w-100 mt-1">clear
+                                            all</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="row mt-3" id="r2">
+
+            </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 
-    <script>
+        <script>
 
         function generateCard()
         {
-            confirm("function called....");
+            //confirm("function called....");
+            let number = document.getElementById('number').value;
+            let head = document.getElementById('head').value;
+            let body = document.getElementById('body').value;
+            let color = document.getElementById('color').value;
+            let count = 1;
 
+            while(count<=number)
+            {
+                document.getElementById('r2').innerHTML += `
+            <div class="col-3 mt-2">
+                <div class="card shadow">
+                    <div class="card-header ${color}">${head}</div>
+                    <div class="card-body">${body}</div>
+                </div>
+            </div>`;
+            count++;
+            
+            }
+            console.log(count);
             return false;
         }
     </script>
-</body>
+    </body>
 
 </html>
