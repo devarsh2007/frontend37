@@ -1,26 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="font-family: Arial, Helvetica, sans-serif;">
-    <h1 align="center">
-        working with forms
-    </h1>
-    <hr>
-    <form action="">
-        <table border="1" cellpadding="10" align="center" width="40%">
-            <tr >
-                <td width="35%">
-                    <label for="fullname" ><b>Enter Full Name</b></label>
-                </td>
-                <td >
-                    <input size="42" type="text" id="fullname" name="fullname" placeholder=" first name          midddle name             last name">
-                </td>
-            </tr>
-        </table>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body style="font-family: Arial, Helvetica, sans-serif;">
+        <h1 align="center">
+            working with forms
+        </h1>
+        <hr>
+        <form action>
+            <table border="1" cellpadding="10" align="center" width="40%">
+                <tr>
+                    <td width="35%">
+                        <label for="fullname"><b>Enter Full Name</b></label>
+                    </td>
+                    <td>
+                        <input size="42" type="text" id="fullname"
+                            name="fullname"
+                            placeholder=" first name          midddle name             last name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email"><b>Email</b></label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email"
+                            placeholder="abc@gmail.com" size="42">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password"><b>password</b></label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password"
+                            placeholder="ex. 123456" size="42">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date"><b>Birth Date</b></label>
+                    </td>
+                    <td>
+                        <input type="date" name="date" id="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="time"><b>Enter Time</b></label>
+                    </td>
+                    <td>
+                        <input type="time" name="time" id="time">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="color"><b>Enter Color</b></label>
+                    </td>
+                    <td><input type="color" name="color" id="color"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile"><b>Mobile No.</b></label></td>
+                    <td>
+                        <input type="number" name="mobile" id="mobile"
+                            placeholder="enter 10 digit number" size="42">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="gender"><b>Gender</b></label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="gender">Male
+
+                        <input type="radio" name="gender" id="gender    ">Female
+
+                        <input type="radio" name="gender" id="gender">Other
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for><b>Lnguage</b></label>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" name="eng" id="eng">
+                                    <label for="eng">English</label>
+                                </td>
+                                <td><input type="checkbox" name="2" id="2">
+                                    <label for="2">Hindi</label></td>
+                                <td><input type="checkbox" name="3" id="3">
+                                    <label for="3">Gujrati</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="4" id="4">
+                                    <label for="4">marathi</label></td>
+                                <td><input type="checkbox" name="5" id="5">
+                                    <label for="5">bengali</label></td>
+                                <td><input type="checkbox" name="6" id="6">
+                                    <label for="6">tamil</label></td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="city"><b>Select City </b></label></td>
+                    <td>
+                        <select id="city" name="city">
+                            <option value="0">Select City</option>
+                            <option value="1">Ahmedabad</option>
+                            <option value="2">Vadodara</option>
+                            <option value="3">Surat</option>
+                            <option value="4">Rajkot</option>
+                            <option value="5">Bhavnagar</option>
+                            <option value="6">Gandhinagar</option>
+                            <option value="7">Jamnagar</option>
+                            <option value="8">Junagadh</option>
+                            <option value="9">Porbandar</option>
+                            <option value="10">Valsad</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
 </html>
