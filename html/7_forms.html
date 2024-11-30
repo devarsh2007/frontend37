@@ -45,7 +45,7 @@
                         <label for="date"><b>Birth Date</b></label>
                     </td>
                     <td>
-                        <input type="date" name="date" id="date">
+                        <input type="date" name="date" id="date" min="2024-11-01" max="2024-12-01">
                     </td>
                 </tr>
                 <tr>
@@ -65,8 +65,8 @@
                 <tr>
                     <td><label for="mobile"><b>Mobile No.</b></label></td>
                     <td>
-                        <input type="number" name="mobile" id="mobile"
-                            placeholder="enter 10 digit number" size="42" required>
+                        <input type="text" name="mobile" id="mobile"
+                            placeholder="enter 10 digit number" size="42" pattern="[6-9]\d{9}"  required>
                     </td>
                 </tr>
 
@@ -127,6 +127,12 @@
                             <option value="9">Porbandar</option>
                             <option value="10">Valsad</option>
                         </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="file"><b>Photos</b></label></td>
+                    <td>
+                        <input type="file" name="file" id="file" required multiple accept="video/*">
                     </td>
                 </tr>
                 <tr>
